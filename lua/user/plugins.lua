@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
   -- Git
   use 'lewis6991/gitsigns.nvim'
   use 'f-person/git-blame.nvim' -- config file left
+  use 'tpope/vim-fugitive'
 
   -- Telescope
   use "nvim-telescope/telescope.nvim" -- config file left

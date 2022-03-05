@@ -15,6 +15,7 @@ require"user.compe"
 require"user.zen-mode"
 require"user.lualine"
 require"user.gitsigns"
+require"user.gitblame"
 require"user.colorscheme"
 require"bufferline".setup{}
 
@@ -25,7 +26,7 @@ require"bufferline".setup{}
 --vim.opt.termguicolors = true
 --vim.cmd [[highlight IndentBlanklineIndent5 guifg=#6699cc gui=nocombine]]
 
--- vim.opt.list = true
+--  vim.opt.list = true
 
 -- require("indent_blankline").setup {
 --    space_char_blankline = " ",

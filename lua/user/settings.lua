@@ -1,16 +1,28 @@
+-- basic settings
 
--- basic config
-local set = vim.opt
+local opt_options= {
+    relativenumber = true,             -- allow relative row numbers
+    shiftwidth = 4,                    -- the number of spaces inserted for every indentation
+    showtabline = 2,                   -- always show tabs
+    fileencoding = 'UTF-8',            -- codification applied to a file
+    hidden = true,                     -- hide files in the background instead of closing them
+    termguicolors = true,              -- set term gui colors
+    splitbelow = true,                 -- force all horizontal splits to go below the window
+    splitright = true,                 -- force all vertical splits to go on the right of the window
+    cursorline = true,                 -- highlight the current line
+}
 
-vim.wo.relativenumber = true
-set.shiftwidth = 4
-set.showtabline = 2
-set.laststatus = 2
-set.encoding = 'UTF-8'
-set.hidden = true
-set.termguicolors = true
 
+for key,value in pairs(opt_options) do
+    vim.opt[key] = value
+end
+    
 
--- python3
-vim.g.python3_host_prog = '/usr/bin/python3'
+local g_options = {
+    -- python3
+    python3_host_prog = '/usr/bin/python3'
+}
 
+for key,value in pairs(g_options) do
+    vim.g[key] = value
+end
