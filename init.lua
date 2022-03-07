@@ -18,6 +18,7 @@ require"user.gitsigns"
 require"user.gitblame"
 require"user.colorscheme"
 require"bufferline".setup{}
+require"user.project"
 
 
 

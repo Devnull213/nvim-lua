@@ -26,7 +26,7 @@ vim.api.nvim_set_keymap("v", ">", ">gv", { noremap = true, silent =  true})
 vim.api.nvim_set_keymap("v", "<", "<gv", { noremap = true, silent =  true})
 
 -- Escaping
-vim.api.nvim_set_keymap("i", "jj", "<ESC>", { noremap = true, silent =  true})
+vim.api.nvim_set_keymap("i", "jj", "<ESC><ESC>", { noremap = true, silent =  true}) --optional
 
 -- Move line/block vmode
 vim.api.nvim_set_keymap("v", "K", ":move \'<-2<CR>gv-gv\'", { noremap = true, silent =  true})
@@ -51,12 +51,14 @@ vim.api.nvim_set_keymap("n", "<leader>f", ":HopLine<CR>", { noremap = true, sile
 
 -- Telescope
 vim.api.nvim_set_keymap("n", "<leader>s", ":Telescope find_files<CR>", { noremap = true, silent =  true})
+vim.api.nvim_set_keymap("n", "<leader>p", ":Telescope projects<CR>", { noremap = true, silent =  true})
 
 -- Zen-Mode
 vim.api.nvim_set_keymap("n", "<leader>z", ":ZenMode<CR>", { noremap = true, silent =  true})
 
 -- Git 
 vim.api.nvim_set_keymap("n", "<leader>b", ":GitBlameToggle<CR>", { noremap = true, silent =  true})
+vim.api.nvim_set_keymap("n", "<leader>gc", ":Git commit<CR>", { noremap = true, silent =  true})
 
 -- Compe
 vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})

@@ -30,6 +30,13 @@ return require('packer').startup(function(use)
   requires = { 'kyazdani42/nvim-web-devicons', opt = true } --have to remove this from here
   }
   use'akinsho/bufferline.nvim'
+  use {
+  "ahmedkhalf/project.nvim",
+  config = function()
+    require("project_nvim").setup {
+    }
+  end
+}
 
   -- LSP
   use 'neovim/nvim-lspconfig'
