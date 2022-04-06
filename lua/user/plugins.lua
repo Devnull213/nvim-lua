@@ -51,6 +51,8 @@ return require('packer').startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim" -- config file left
 
+  -- comments
+  use "preservim/nerdcommenter"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
